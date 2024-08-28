@@ -5,10 +5,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <a href="#home"><img src={logo} className="App-logo" /></a>
         <div>
-          <h1>Hello, World!</h1>
-          <p>This is a simple React app.</p>
+          <h1>Hello World!</h1>
+          <p>This page has a11y issues.</p>
         </div>
       </header>
     </div>
