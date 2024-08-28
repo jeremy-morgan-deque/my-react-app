@@ -26,4 +26,3 @@ yarn-error.log*
 /a11y-results
 /playwright-report
 package-lock.json
-package.json
