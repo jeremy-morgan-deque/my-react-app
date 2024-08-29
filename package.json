@@ -17,6 +17,7 @@
     "test-react": "react-scripts test",
     "test-playwright": "rimraf ./a11y-results/ && npx playwright test",
     "test-playwright-headed": "rimraf ./a11y-results/ && npx playwright test --headed",
+    "test-playwright-github": "rimraf ./a11y-results/ && npm run start && npx playwright test",
     "eject": "react-scripts eject"
   },
   "XeslintConfig": {
