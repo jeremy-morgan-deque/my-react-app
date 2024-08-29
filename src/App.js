@@ -9,6 +9,7 @@ function App() {
         <div>
           <h1>My React App</h1>
           <p>This page has a11y issues.</p>
+          <p class="dark-grey-text">This is hard to read.</p>
         </div>
         <ul>
           <li>Item 1</li>
