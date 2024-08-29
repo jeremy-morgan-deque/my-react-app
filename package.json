@@ -38,10 +38,14 @@
     ]
   },
   "devDependencies": {
+    "@axe-core/watcher": "^3.13.1",
     "@axe-devtools/playwright": "^4.10.0",
     "@axe-devtools/reporter": "^4.8.0",
     "@playwright/test": "^1.46.1",
+    "chai": "^5.1.1",
     "core-js": "^3.38.1",
+    "jest": "^27.5.1",
+    "mocha": "^10.7.3",
     "playwright": "^1.46.1",
     "rimraf": "^3.0.2"
   }
