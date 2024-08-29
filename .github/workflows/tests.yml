@@ -16,14 +16,11 @@ jobs:
           - uses: actions/setup-node@v4
             with:
               node-version: 18
-          #- run: echo "//registry.npmjs.org/:_authToken=$AXE_DEVTOOLS_AUTH_TOKEN" >> ~/.npmrc
           - run: npm install
           - run: npx playwright install --with-deps
           #- run: npm run build
           - name: Run tests
             run: npm run test-playwright
-            #run: xvfb-run --auto-servernum npm run ci
-            #working-directory: ./example
             env:
               API_KEY: ${{ secrets.AXE_DEVHUB_API_KEY_MY_REACT_APP }}
               SERVER_URL: ${{ secrets.AXE_DEVHUB_SERVER_MY_REACT_APP }}
