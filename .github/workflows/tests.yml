@@ -2,6 +2,9 @@ name: Tests
 
 on: [pull_request]
 
+env:
+  AXE_DEVTOOLS_AUTH_TOKEN: ${{ secrets.AXE_DEVTOOLS_AUTH_TOKEN }}
+
 jobs:
     playwright-test:
         runs-on: ubuntu-latest
