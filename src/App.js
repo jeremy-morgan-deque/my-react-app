@@ -15,7 +15,7 @@ function App() {
           <li>Item 1</li>
           <li>Item 2</li>
           <li>Item 3</li>
-          <p>Item 4</p>
+          <p class="dark-grey-text">Item 4</p>
         </ul>
       </header>
     </div>
