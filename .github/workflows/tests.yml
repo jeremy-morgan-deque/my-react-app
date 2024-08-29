@@ -4,6 +4,8 @@ on: [pull_request]
 
 env:
   AXE_DEVTOOLS_AUTH_TOKEN: ${{ secrets.AXE_DEVTOOLS_AUTH_TOKEN }}
+  AXE_DEVHUB_API_KEY_MY_REACT_APP: ${{ secrets.AXE_DEVHUB_API_KEY_MY_REACT_APP }}
+  AXE_DEVHUB_SERVER_MY_REACT_APP: ${{ secrets.AXE_DEVHUB_SERVER_MY_REACT_APP }}
 
 jobs:
     playwright-test:
