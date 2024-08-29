@@ -18,10 +18,10 @@ jobs:
               node-version: 18
           #- run: echo "//registry.npmjs.org/:_authToken=$AXE_DEVTOOLS_AUTH_TOKEN" >> ~/.npmrc
           - run: npm install
-          - run: npx playwright install
+          - run: npx playwright install --with-deps
           #- run: npm run build
           - name: Run tests
-            run: npm run build && npm run test-playwright
+            run: npm run test-playwright
             #run: xvfb-run --auto-servernum npm run ci
             #working-directory: ./example
             env:
