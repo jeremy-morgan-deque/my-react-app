@@ -17,6 +17,7 @@ jobs:
             with:
               node-version: 18
           #- run: echo "//registry.npmjs.org/:_authToken=$AXE_DEVTOOLS_AUTH_TOKEN" >> ~/.npmrc
+          - run: npx playwright install
           - run: npm install
           - run: npm run build
           - name: Run tests
