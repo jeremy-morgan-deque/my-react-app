@@ -22,7 +22,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# a11y
+# manually added
 /a11y-results
 /playwright-report
+/test-results
 package-lock.json
