@@ -1,4 +1,4 @@
-1name: Tests
+name: Tests
 
 on: [pull_request]
 
