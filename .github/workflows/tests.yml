@@ -28,7 +28,7 @@ jobs:
         needs: playwright-test
         steps:
           - uses: actions/checkout@v3
-          - uses: dequelabs/axe-devhub-action@v2
+          - uses: dequelabs/axe-devhub-action@v1
             with:
                 api_key: ${{ secrets.AXE_DEVHUB_API_KEY_MY_REACT_APP }}
                 server_url: ${{ secrets.AXE_DEVHUB_SERVER_MY_REACT_APP }}
