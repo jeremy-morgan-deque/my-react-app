@@ -14,15 +14,3 @@ module.exports = playwrightTest({
   args: ['--headless=new']
 });
 
-
-/*
-const { test, expect } = playwrightTest({
-  axe: {
-    apiKey: AXE_DEVHUB_API_KEY,
-    serverURL: AXE_DEVHUB_SERVER
-  },
-  //headless: false,
-  //args: ['--headless=new']
-})*/
-
-//export { test, expect }
