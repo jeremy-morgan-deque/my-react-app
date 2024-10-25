@@ -1,6 +1,8 @@
 const https = require('https')
 const assert = require('assert')
 
+const axe_url_pre = "https://axe.deque.com"
+
 // changed API_KEY to AXE_DEVHUB_API_KEY_MY_REACT_APP
 const { AXE_DEVHUB_API_KEY_MY_REACT_APP, GIT_SHA } = process.env
 assert(AXE_DEVHUB_API_KEY_MY_REACT_APP, 'AXE_DEVHUB_API_KEY_MY_REACT_APP is required')
@@ -56,11 +58,11 @@ const main = async () => {
     console.log(
       `There are ${last_run_violation_count} violations in ${project_name}!`
     )
-    console.log(`See ${axe_url} for more information`)
-    process.exit(1);
+    console.log(`See ${axe_url_pre}${axe_url} for more information`)
+    process.exit(1)
   } else {
     console.log('axe clean!')
-    process.exit(0);
+    process.exit(0)
   }
 }
 
