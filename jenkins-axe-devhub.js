@@ -2,10 +2,9 @@ const https = require('https')
 const assert = require('assert')
 
 // changed API_KEY to AXE_DEVHUB_API_KEY_MY_REACT_APP
-// changed GIT_SHA to GIT_COMMIT
-const { AXE_DEVHUB_API_KEY_MY_REACT_APP, GIT_COMMIT } = process.env
+const { AXE_DEVHUB_API_KEY_MY_REACT_APP, GIT_SHA } = process.env
 assert(AXE_DEVHUB_API_KEY_MY_REACT_APP, 'API_KEY is required')
-assert(GIT_COMMIT, 'GIT_COMMIT is required')
+assert(GIT_SHA, 'GIT_SHA is required')
 
 const request = () =>
   new Promise((resolve, reject) => {
