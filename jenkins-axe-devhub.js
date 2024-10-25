@@ -57,8 +57,10 @@ const main = async () => {
       `There are ${last_run_violation_count} violations in ${project_name}!`
     )
     console.log(`See ${axe_url} for more information`)
+    process.exit(1);
   } else {
     console.log('axe clean!')
+    process.exit(0);
   }
 }
 
