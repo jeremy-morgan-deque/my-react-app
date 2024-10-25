@@ -18,6 +18,7 @@ function App() {
           <p class="dark-grey-text">Item 4</p>
         </ul>
       </header>
+      <p>More hard to read text (fixed).</p>
     </div>
   );
 }
