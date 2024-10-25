@@ -3,7 +3,7 @@ const assert = require('assert')
 
 // changed API_KEY to AXE_DEVHUB_API_KEY_MY_REACT_APP
 const { AXE_DEVHUB_API_KEY_MY_REACT_APP, GIT_SHA } = process.env
-assert(AXE_DEVHUB_API_KEY_MY_REACT_APP, 'API_KEY is required')
+assert(AXE_DEVHUB_API_KEY_MY_REACT_APP, 'AXE_DEVHUB_API_KEY_MY_REACT_APP is required')
 assert(GIT_SHA, 'GIT_SHA is required')
 
 const request = () =>
@@ -15,7 +15,7 @@ const request = () =>
       path: `/api-pub/v1/axe-watcher/gh/${GIT_SHA}`,
       method: 'GET',
       headers: {
-        'X-API-Key': API_KEY,
+        'X-API-Key': AXE_DEVHUB_API_KEY_MY_REACT_APP,
         Accept: 'application/json'
       }
     }
